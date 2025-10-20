@@ -12,3 +12,6 @@ h1{
 h2 {
   color: #E8399F;
 }
+.description {
+  max-width: 600px;
+}
