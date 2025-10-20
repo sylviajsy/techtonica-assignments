@@ -3,6 +3,11 @@ p {
 }
 body {
   background-color: #FAD4EA;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 48px;
+    text-align: center;
 }
 h2 {
   color: #E8399F;
