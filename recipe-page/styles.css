@@ -1,0 +1,28 @@
+p {
+  color: #8D1059;
+}
+body {
+  background-color: #FAD4EA;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+h2 {
+  color: #E8399F;
+  font-family: 'Fredericka the Great', cursive;
+}
+.description {
+  max-width: 600px;
+}
+#left {
+  width: 600px;
+  float: left;
+}
+#right {
+  width: 600px;
+  float: left;
+  margin-left: 50px;
+}
