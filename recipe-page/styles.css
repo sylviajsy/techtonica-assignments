@@ -16,6 +16,7 @@ h2 {
 }
 .description {
   max-width: 600px;
+  margin-left: 20px;
 }
 #left {
   width: 600px;
