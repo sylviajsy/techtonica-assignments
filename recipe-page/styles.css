@@ -17,11 +17,11 @@ h2 {
 .description {
   max-width: 600px;
 }
-.left {
+#left {
   width: 600px;
   float: left;
 }
-.right {
+#right {
   width: 600px;
   float: left;
   margin-left: 50px;
