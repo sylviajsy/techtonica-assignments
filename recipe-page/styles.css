@@ -20,6 +20,7 @@ h2 {
 #left {
   width: 600px;
   float: left;
+  margin-left: 20px;
 }
 #right {
   width: 600px;
