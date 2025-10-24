@@ -5,12 +5,12 @@ body {
   background-color: #FAD4EA;
   font-family: 'Poppins', sans-serif;
 }
-h1{
+h1 {
     font-size: 48px;
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
 }
-h2 {
+h2,h3 {
   color: #E8399F;
   font-family: 'Fredericka the Great', cursive;
 }
