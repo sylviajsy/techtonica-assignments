@@ -28,3 +28,30 @@ h2 {
   float: left;
   margin-left: 50px;
 } */
+
+ /* Using Flex */
+ .container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.left,
+.right {
+  flex: 1;               /* each take up 50% */
+  padding: 20px;
+  background: #fce4ec;
+  box-sizing: border-box;
+}
+
+/* Add margin to left and right parts */
+.left {
+  margin-right: 10px;
+}
+.right {
+  margin-left: 10px;
+}
+
+ .checked {
+  text-decoration: line-through;
+ }

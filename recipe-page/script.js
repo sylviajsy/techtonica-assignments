@@ -23,3 +23,18 @@ label.appendChild(document.createTextNode("Do you like this recipe?"));
 // appending the checkbox and lable the div
 firstDiv.append(checkbox);
 firstDiv.append(label);
+
+label.className = "checked";
+
+// Add checkbox to whole ingredient list
+// document.addEventListener("DOMContentLoaded", () =>{
+//     const ingredientList = document.getElementById("ingredient-list");
+//     const items = ingredientList.querySelectorAll("li");
+//     items.forEach((item, idex)=> {
+//         let checkbox = document.createElement('input');
+//         checkbox.type = "checkbox";
+//         checkbox.name = "name";
+//         checkbox.value = "value";
+//         checkbox.id = "id";
+//     })
+// })
