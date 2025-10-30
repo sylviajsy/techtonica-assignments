@@ -24,7 +24,11 @@ label.appendChild(document.createTextNode("Do you like this recipe?"));
 firstDiv.append(checkbox);
 firstDiv.append(label);
 
-label.className = "checked";
+// label.className = "checked";
+
+document.addEventListener("click", ()=>{
+    label.classList.toggle("checked")
+})
 
 // Add checkbox to whole ingredient list
 // document.addEventListener("DOMContentLoaded", () =>{
