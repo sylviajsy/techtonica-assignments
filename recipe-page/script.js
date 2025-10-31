@@ -28,7 +28,10 @@ firstDiv.append(label);
 // label.className = "checked";
 
 page_checkbox.addEventListener("change", ()=>{
-    label.classList.add("checked", page_checkbox.checked)
+    page_checkbox.addEventListener("change", () => {
+  label.classList.toggle("checked", page_checkbox.checked);
+});
+
 })
 
 // Add checkbox to whole ingredient list
@@ -39,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         ingredient_checkbox.type = "checkbox";
         ingredient_checkbox.name = `ingredient-${index}`;
         ingredient_checkbox.value = "value";
-        ingredient_checkbox.id = "id";
+        ingredient_checkbox.id = `ingredient-${index}`;
         ingredient_checkbox.style.marginRight = "8px";
 
         ingredient_checkbox.addEventListener("change", () => {
@@ -62,7 +65,7 @@ const addBtn = document.getElementById("add-btn");
 const newInput = document.getElementById("new-ingredient");
 
 addBtn.addEventListener("click",()=>{
-    const newText = newInput.value.trim();
+    if (!newText) return;
     // Add new customized item
     const newli = document.createElement("li");
     newli.innerHTML = newText;
