@@ -49,4 +49,27 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
  })
 
+// Add customized ingredient
+// const list = document.getElementById('ingredient-list');
+const addBtn = document.getElementById("add-btn");
+const newInput = document.getElementById("new-ingredient");
 
+addBtn.addEventListener("click",()=>{
+    const newText = newInput.value.trim();
+    // Add new customized item
+    const newli = document.createElement("li");
+    newli.innerHTML = newText;
+    list.appendChild(newli);
+
+    // Add checkbox to the item
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.style.marginRight = "8px";
+
+    checkbox.addEventListener("change", () => {
+      newli.classList.toggle("checked", checkbox.checked);
+    });
+    newli.prepend(checkbox);
+    // Clear input
+    newInput.value = "";
+})
