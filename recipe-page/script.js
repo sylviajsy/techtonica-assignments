@@ -45,6 +45,13 @@ document.addEventListener("DOMContentLoaded", () =>{
         ingredient_checkbox.addEventListener("change", () => {
                 item.classList.toggle("checked", ingredient_checkbox.checked);
         })
+        // click ingredient item will also check checkbox
+        item.addEventListener("click",(e)=>{
+            item.classList.toggle("checked", item.checked);
+            if (e.target === ingredient_checkbox) return;
+            ingredient_checkbox.checked = !ingredient_checkbox.checked;
+            item.classList.toggle("checked", ingredient_checkbox.checked);
+        })
         item.prepend(ingredient_checkbox);
     })
  })
