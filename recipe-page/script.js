@@ -58,7 +58,7 @@ const addBtn = document.getElementById("add-btn");
 const newInput = document.getElementById("new-ingredient");
 
 addBtn.addEventListener("click",()=>{
-    const newText = newInput.value.trim();
+    if (!newText) return;
     // Add new customized item
     const newli = document.createElement("li");
     newli.innerHTML = newText;
