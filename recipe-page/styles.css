@@ -72,3 +72,10 @@ h2 {
     background-color: #FFFF;
   }
 }
+
+@media (max-width: 600px){
+  #left, #right {
+    text-align: center;
+    border: 20px solid #F06292;
+  }
+}
