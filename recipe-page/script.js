@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         ingredient_checkbox.type = "checkbox";
         ingredient_checkbox.name = `ingredient-${index}`;
         ingredient_checkbox.value = "value";
-        ingredient_checkbox.id = "id";
+        ingredient_checkbox.id = `ingredient-${index}`;
         ingredient_checkbox.style.marginRight = "8px";
 
         ingredient_checkbox.addEventListener("change", () => {
