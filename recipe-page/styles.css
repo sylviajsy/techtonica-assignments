@@ -57,11 +57,15 @@ h2 {
   color: grey;
  }
 
+ .video-container {
+    display: flex;
+ }
+
 /* Add media queries for tablets*/
  @media (max-width: 768px) {
-  #left, #right {
+  /* #left, #right {
     text-align: center;
-  }
+  } */
 
   img {
     width: 100%;
@@ -75,7 +79,7 @@ h2 {
 
 @media (max-width: 600px){
   #left, #right {
-    text-align: center;
+    /* text-align: center; */
     border: 20px solid #F06292;
   }
 }
