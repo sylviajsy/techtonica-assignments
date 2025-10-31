@@ -5,15 +5,15 @@ newli.innerHTML = 'Lots of love';
 list.appendChild(newli);
 
 // Add a check mark as an element to a list
-const firstDiv = document.getElementById('ingredient-div')
+const firstDiv = document.getElementById('left')
 
 // creating checkbox item
-let checkbox = document.createElement('input');
+let pagecheckbox = document.createElement('input');
 // Assigning attributes to created checkbox
-checkbox.type = "checkbox";
-checkbox.name = "name";
-checkbox.value = "value";
-checkbox.id = "id";
+pagecheckbox.type = "checkbox";
+pagecheckbox.name = "name";
+pagecheckbox.value = "value";
+pagecheckbox.id = "id";
 
 // create label for checkbox
 var label = document.createElement("label");
@@ -21,24 +21,30 @@ label.htmlFor = "id";
 label.appendChild(document.createTextNode("Do you like this recipe?"));
 
 // appending the checkbox and lable the div
-firstDiv.append(checkbox);
+firstDiv.append(pagecheckbox);
 firstDiv.append(label);
 
 // label.className = "checked";
 
-document.addEventListener("click", ()=>{
-    label.classList.toggle("checked")
+pagecheckbox.addEventListener("change", ()=>{
+    label.classList.add("checked")
 })
 
 // Add checkbox to whole ingredient list
-// document.addEventListener("DOMContentLoaded", () =>{
-//     const ingredientList = document.getElementById("ingredient-list");
-//     const items = ingredientList.querySelectorAll("li");
-//     items.forEach((item, idex)=> {
-//         let checkbox = document.createElement('input');
-//         checkbox.type = "checkbox";
-//         checkbox.name = "name";
-//         checkbox.value = "value";
-//         checkbox.id = "id";
-//     })
-// })
+document.addEventListener("DOMContentLoaded", () =>{
+    const items = document.querySelectorAll("#ingredient-list li");
+    items.forEach((item, index)=> {
+        let ingredient_checkbox = document.createElement('input');
+        ingredient_checkbox.type = "checkbox";
+        ingredient_checkbox.name = `ingredient-${index}`;
+        ingredient_checkbox.value = "value";
+        ingredient_checkbox.id = "id";
+        ingredient_checkbox.style.marginRight = "8px";
+
+        ingredient_checkbox.addEventListener("change", () => {
+                item.classList.toggle("checked", ingredient_checkbox.checked);
+        })
+        item.prepend(ingredient_checkbox);
+    })
+ })
+
