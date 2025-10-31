@@ -28,7 +28,10 @@ firstDiv.append(label);
 // label.className = "checked";
 
 page_checkbox.addEventListener("change", ()=>{
-    label.classList.add("checked", page_checkbox.checked)
+    page_checkbox.addEventListener("change", () => {
+  label.classList.toggle("checked", page_checkbox.checked);
+});
+
 })
 
 // Add checkbox to whole ingredient list
