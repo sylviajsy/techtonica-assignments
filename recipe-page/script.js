@@ -8,12 +8,13 @@ list.appendChild(newli);
 const firstDiv = document.getElementById('left')
 
 // creating checkbox item
-let pagecheckbox = document.createElement('input');
+let page_checkbox = document.createElement('input');
 // Assigning attributes to created checkbox
-pagecheckbox.type = "checkbox";
-pagecheckbox.name = "name";
-pagecheckbox.value = "value";
-pagecheckbox.id = "id";
+page_checkbox.type = "checkbox";
+page_checkbox.name = "name";
+page_checkbox.value = "value";
+page_checkbox.id = "id";
+page_checkbox.style.marginRight = "8px";
 
 // create label for checkbox
 var label = document.createElement("label");
@@ -21,13 +22,13 @@ label.htmlFor = "id";
 label.appendChild(document.createTextNode("Do you like this recipe?"));
 
 // appending the checkbox and lable the div
-firstDiv.append(pagecheckbox);
+firstDiv.append(page_checkbox);
 firstDiv.append(label);
 
 // label.className = "checked";
 
-pagecheckbox.addEventListener("change", ()=>{
-    label.classList.add("checked")
+page_checkbox.addEventListener("change", ()=>{
+    label.classList.add("checked", page_checkbox.checked)
 })
 
 // Add checkbox to whole ingredient list
@@ -47,4 +48,5 @@ document.addEventListener("DOMContentLoaded", () =>{
         item.prepend(ingredient_checkbox);
     })
  })
+
 

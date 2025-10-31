@@ -56,3 +56,19 @@ h2 {
   text-decoration: line-through;
   color: grey;
  }
+
+/* Add media queries for tablets*/
+ @media (max-width: 768px) {
+  #left, #right {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body{
+    background-color: #FFFF;
+  }
+}
