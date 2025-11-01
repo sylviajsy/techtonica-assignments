@@ -36,8 +36,8 @@ h2 {
   gap: 20px;
 }
 
-.left,
-.right {
+#left,
+#right {
   flex: 1;               /* each take up 50% */
   padding: 20px;
   background: #fce4ec;
@@ -45,10 +45,10 @@ h2 {
 }
 
 /* Add margin to left and right parts */
-.left {
+#left {
   margin-right: 10px;
 }
-.right {
+#right {
   margin-left: 10px;
 }
 
@@ -57,7 +57,7 @@ h2 {
   color: grey;
  }
 
- .video-container {
+ #video-container {
     display: flex;
  }
 

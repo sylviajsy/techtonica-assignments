@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     items.forEach((item, index)=> {
         let ingredient_checkbox = document.createElement('input');
         ingredient_checkbox.type = "checkbox";
-        ingredient_checkbox.name = `ingredient-${index}`;
         ingredient_checkbox.value = "value";
         ingredient_checkbox.id = `ingredient-${index}`;
         ingredient_checkbox.style.marginRight = "8px";
