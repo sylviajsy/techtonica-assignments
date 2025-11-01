@@ -28,3 +28,42 @@ h2 {
   float: left;
   margin-left: 50px;
 } */
+
+ /* Using Flex */
+ .container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+ .checked {
+  text-decoration: line-through;
+  color: grey;
+ }
+
+ #video-container {
+    display: flex;
+ }
+
+/* Add media queries for tablets*/
+ @media (max-width: 768px) {
+  /* #left, #right {
+    text-align: center;
+  } */
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  body{
+    background-color: #FFFF;
+  }
+}
+
+@media (max-width: 600px){
+  #left, #right {
+    /* text-align: center; */
+    border: 20px solid #F06292;
+  }
+}
