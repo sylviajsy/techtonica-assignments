@@ -36,22 +36,6 @@ h2 {
   gap: 20px;
 }
 
-#left,
-#right {
-  flex: 1;               /* each take up 50% */
-  padding: 20px;
-  background: #fce4ec;
-  box-sizing: border-box;
-}
-
-/* Add margin to left and right parts */
-#left {
-  margin-right: 10px;
-}
-#right {
-  margin-left: 10px;
-}
-
  .checked {
   text-decoration: line-through;
   color: grey;
@@ -66,7 +50,7 @@ h2 {
   /* #left, #right {
     text-align: center;
   } */
-
+  
   img {
     width: 100%;
     height: auto;
