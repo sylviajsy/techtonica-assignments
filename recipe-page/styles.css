@@ -29,6 +29,13 @@ h2 {
   margin-left: 50px;
 } */
 
+#left,
+#right {
+  padding: 20px;
+  background: #fce4ec;
+  box-sizing: border-box;
+}
+
  /* Using Flex */
  .container {
   display: flex;
