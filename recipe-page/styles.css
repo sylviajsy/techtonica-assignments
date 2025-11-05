@@ -14,20 +14,6 @@ h2 {
   color: #E8399F;
   font-family: 'Fredericka the Great', cursive;
 }
-/* .description {
-  max-width: 400px;
-  margin-left: 20px;
-} */
-/* #left {
-  width: 600px; 
-  float: left;
-  margin-left: 20px;
-}
-#right {
-  width: 600px;
-  float: left;
-  margin-left: 50px;
-} */
 
 #left,
 #right {
@@ -54,23 +40,14 @@ h2 {
 
 /* Add media queries for tablets*/
  @media (max-width: 768px) {
-  /* #left, #right {
-    text-align: center;
-  } */
-  
   img {
     width: 100%;
     height: auto;
-  }
-
-  body{
-    background-color: #FFFF;
   }
 }
 
 @media (max-width: 600px){
   #left, #right {
-    /* text-align: center; */
     border: 20px solid #F06292;
   }
 }
