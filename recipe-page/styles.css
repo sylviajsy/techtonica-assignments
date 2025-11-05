@@ -44,6 +44,9 @@ h2 {
     width: 100%;
     height: auto;
   }
+  body{
+    background-image: linear-gradient(to bottom, #FFFFFF,#FAD4EA);
+  }
 }
 
 @media (max-width: 600px){
