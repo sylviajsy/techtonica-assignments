@@ -14,17 +14,40 @@ h2 {
   color: #E8399F;
   font-family: 'Fredericka the Great', cursive;
 }
-/* .description {
-  max-width: 400px;
-  margin-left: 20px;
-} */
-/* #left {
-  width: 600px; 
-  float: left;
-  margin-left: 20px;
-}
+
+#left,
 #right {
-  width: 600px;
-  float: left;
-  margin-left: 50px;
-} */
+  padding: 20px;
+  background: #fce4ec;
+  box-sizing: border-box;
+}
+
+ /* Using Flex */
+ .container {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+ .checked {
+  text-decoration: line-through;
+  color: grey;
+ }
+
+ #video-container {
+    display: flex;
+ }
+
+/* Add media queries for tablets*/
+ @media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px){
+  #left, #right {
+    border: 20px solid #F06292;
+  }
+}
