@@ -20,6 +20,7 @@ h2 {
   padding: 20px;
   background: #fce4ec;
   box-sizing: border-box;
+  border-radius: 10px; 
 }
 
  /* Using Flex */
