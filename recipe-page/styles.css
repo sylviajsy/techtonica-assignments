@@ -21,6 +21,7 @@ h2 {
   background: #fce4ec;
   box-sizing: border-box;
   border-radius: 10px; 
+  border: 10px solid #f8bbd0;
 }
 
  /* Using Flex */
