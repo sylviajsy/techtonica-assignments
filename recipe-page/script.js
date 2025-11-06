@@ -26,8 +26,6 @@
     firstDiv.append(page_checkbox);
     firstDiv.append(label);
 
-    // label.className = "checked";
-
     page_checkbox.addEventListener("change", ()=>{
         label.classList.toggle("checked", page_checkbox.checked);
     });
