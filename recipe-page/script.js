@@ -60,7 +60,8 @@
     const newInput = document.getElementById("new-ingredient");
 
     addBtn.addEventListener("click",()=>{
-        if (!newInput)
+        const newText = newInput.value.trim();
+        if (!newText)
             return;
         // Add new customized item
         const newli = document.createElement("li");
