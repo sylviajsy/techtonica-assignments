@@ -1,5 +1,5 @@
 // Add a defined new element to ingredient list
-//document.addEventListener("DOMContentLoaded", () =>{
+document.addEventListener("DOMContentLoaded", () =>{
     const list = document.getElementById('ingredient-list');
     const newli = document.createElement('li');
     newli.innerHTML = 'Lots of love';
@@ -29,8 +29,6 @@
     page_checkbox.addEventListener("change", ()=>{
         label.classList.toggle("checked", page_checkbox.checked);
     });
-
-    // })
 
     // Add checkbox to whole ingredient list
     const items = document.querySelectorAll("#ingredient-list li");
@@ -81,3 +79,4 @@
         newInput.value = "";
     })
  })
+})
