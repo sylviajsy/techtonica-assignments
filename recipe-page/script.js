@@ -59,7 +59,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     addBtn.addEventListener("click",()=>{
         const newText = newInput.value.trim();
-        if (!newText) return;
+        if (!newText) {
+            alert("User input cannot be empty!")
+            return;
+        }
     
         // Add new customized item
         const newli = document.createElement("li");
