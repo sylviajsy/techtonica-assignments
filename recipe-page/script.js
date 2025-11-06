@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () =>{
  
 
     // Add customized ingredient
-    // const list = document.getElementById('ingredient-list');
     const addBtn = document.getElementById("add-btn");
     const newInput = document.getElementById("new-ingredient");
 
