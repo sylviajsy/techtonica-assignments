@@ -36,6 +36,7 @@ h2 {
 
  #video-container {
     display: flex;
+    padding: 20px;
  }
 
 /* Add media queries for tablets*/
