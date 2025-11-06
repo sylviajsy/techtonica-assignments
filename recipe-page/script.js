@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () =>{
             item.classList.toggle("checked", ingredient_checkbox.checked);
         })
         item.prepend(ingredient_checkbox);
+    })
  
 
     // Add customized ingredient
@@ -58,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     addBtn.addEventListener("click",()=>{
         const newText = newInput.value.trim();
-        if (!newText)
-            return;
+        if (!newText) return;
+    
         // Add new customized item
         const newli = document.createElement("li");
         newli.innerHTML = newText;
@@ -77,5 +78,4 @@ document.addEventListener("DOMContentLoaded", () =>{
         // Clear input
         newInput.value = "";
     })
- })
 })
