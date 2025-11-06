@@ -23,7 +23,6 @@ h2 {
   border-radius: 10px; 
   border: 10px solid #f8bbd0;
 }
-
  /* Using Flex */
  .container {
   display: flex;
@@ -55,6 +54,10 @@ h2 {
   }
   body{
     background-image: linear-gradient(to bottom, #FFFFFF,#FAD4EA);
+  }
+  #left,
+  #right {
+  margin: 20px;
   }
 }
 
