@@ -43,6 +43,7 @@ h2 {
  #video-container img{
     width: 100%;
     height: auto;
+    border-radius: 10px;
  }
 
 /* Add media queries for tablets*/
