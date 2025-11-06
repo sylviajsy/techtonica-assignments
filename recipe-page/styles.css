@@ -20,8 +20,6 @@ h2 {
   padding: 20px;
   background: #fce4ec;
   box-sizing: border-box;
-  border-radius: 10px; 
-  border: 10px solid #f8bbd0;
 }
  /* Using Flex */
  .container {
@@ -57,7 +55,9 @@ h2 {
   }
   #left,
   #right {
-  margin: 20px;
+    border-radius: 10px; 
+    border: 10px solid #f8bbd0;
+    margin: 20px;
   }
 }
 
