@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     page_checkbox.type = "checkbox";
     page_checkbox.name = "name";
     page_checkbox.value = "value";
-    page_checkbox.id = "id";
+    page_checkbox.id = "page_checkbox_id";
     page_checkbox.style.marginRight = "8px";
 
     // create label for checkbox
