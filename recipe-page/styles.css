@@ -66,3 +66,7 @@ h2 {
     border: 20px solid #F06292;
   }
 }
+
+mark{
+  background-color: #F06292;
+}
