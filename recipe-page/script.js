@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         item.prepend(ingredient_checkbox);
     })
  
-
     // Add customized ingredient
     const addBtn = document.getElementById("add-btn");
     const newInput = document.getElementById("new-ingredient");
