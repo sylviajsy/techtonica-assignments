@@ -89,13 +89,16 @@ document.addEventListener("DOMContentLoaded", () =>{
         if (!query) return;
 
         const elements = document.querySelectorAll("h1, h2, p, li");
-            for (let i of elements){
-                if (i.textContent.toLowerCase().includes(query)){
-                    i.scrollIntoView({ behavior: "smooth", block: "center" });
-                    i.style.backgroundColor = "#Blue";
-                    return;
-                }
+        let found = false;
+        elements.forEach((i)=>{
+            if (i.textContent.toLowerCase().includes(query.toLowerCase())){
+                found = true;
+                const regex = new RegExp(`(${query})`, "gi");
+                i.innerHTML = i.innerHTML.replace(regex, `<mark>$1</mark>`);
+                i.scrollIntoView({ behavior: "smooth", block: "center" });
+                return;
             }
-            alert(`No Match found for "${query}"`);
-            });
+        })
+            if (!found){alert(`No Match found for "${query}"`);}
+    });
 })
