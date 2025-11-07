@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () =>{
      const form = document.querySelector("form");
      form.addEventListener("submit", (event)=>{
         event.preventDefault();
+        const newInput = document.getElementById('search-input');
         const query = document.getElementById('search-input').value.trim().toLowerCase();
 
         if (!query) return;
@@ -102,5 +103,6 @@ document.addEventListener("DOMContentLoaded", () =>{
             }
         }
             if (!found){alert(`No Match found for "${query}"`);}
+            newInput.value = "";
     });
 })
