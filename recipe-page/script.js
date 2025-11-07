@@ -81,5 +81,21 @@ document.addEventListener("DOMContentLoaded", () =>{
         newInput.value = "";
     })
 
-    // Search on the page
+     // Search on the page
+     const form = document.querySelector("form");
+     form.addEventListener("submit", (event)=>{
+        const query = document.getElementById('search-input').value.trim().toLowerCase();
+
+        if (!query) return;
+
+        const elements = document.querySelectorAll("h1, h2, p, li");
+            for (let i of elements){
+                if (i.textContent.toLowerCase().includes(query)){
+                    i.scrollIntoView({ behavior: "smooth", block: "center" });
+                    i.style.backgroundColor = "#Blue";
+                    return;
+                }
+            }
+            alert(`No Match found for "${query}"`);
+            });
 })
