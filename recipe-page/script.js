@@ -80,4 +80,6 @@ document.addEventListener("DOMContentLoaded", () =>{
         // Clear input
         newInput.value = "";
     })
+
+    // Search on the page
 })
