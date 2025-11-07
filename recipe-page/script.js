@@ -84,21 +84,23 @@ document.addEventListener("DOMContentLoaded", () =>{
      // Search on the page
      const form = document.querySelector("form");
      form.addEventListener("submit", (event)=>{
+        event.preventDefault();
         const query = document.getElementById('search-input').value.trim().toLowerCase();
 
         if (!query) return;
 
         const elements = document.querySelectorAll("h1, h2, p, li");
         let found = false;
-        elements.forEach((i)=>{
+        for (const i of elements){
             if (i.textContent.toLowerCase().includes(query.toLowerCase())){
                 found = true;
-                // i.scrollIntoView({ behavior: "smooth", block: "start" });
+                i.scrollIntoView({ behavior: "smooth", block: "center" });
+                window.scrollBy(0, -80);
                 const regex = new RegExp(`(${query})`, "gi");
                 i.innerHTML = i.innerHTML.replace(regex, `<mark>$1</mark>`);
-                return;
+                break;
             }
-        })
+        }
             if (!found){alert(`No Match found for "${query}"`);}
     });
 })
