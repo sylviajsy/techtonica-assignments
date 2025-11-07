@@ -96,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () =>{
             if (i.textContent.toLowerCase().includes(query.toLowerCase())){
                 found = true;
                 i.scrollIntoView({ behavior: "smooth", block: "center" });
-                window.scrollBy(0, -80);
                 const regex = new RegExp(`(${query})`, "gi");
                 i.innerHTML = i.innerHTML.replace(regex, `<mark>$1</mark>`);
                 break;
